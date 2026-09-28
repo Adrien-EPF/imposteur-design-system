@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# design-sync: staged converter scripts + their own node_modules (regenerated)
+.ds-sync/
+# design-sync: generated build output (regenerated from src/)
+ds-bundle/
+# design-sync: machine state, not durable
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules

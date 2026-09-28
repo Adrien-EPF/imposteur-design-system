@@ -1,0 +1,71 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<title>Imposteur</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito:wght@600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--surface); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:520px; height:288px; }
+  .turq { fill:var(--turquoise); }
+  .lemon { fill:var(--lemon-strong); }
+  .imp { fill:var(--imposteur); }
+  .white { fill:var(--mr-white); }
+  .blk { rx:var(--radius-lg); }
+  .pill { rx:28px; }
+  .dot { fill:var(--surface); }
+  .dot.first { fill:var(--lemon-strong); }
+  .dot.imp { fill:var(--imposteur); }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:72px; line-height:.95; font-weight:800; color:var(--ink); }
+  .tag { margin:var(--space-2) 0 0 3px; font-size:14px; line-height:20px; font-weight:600; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 520 288" width="520" height="288">
+<!--
+  blocks      lemon-strong 128×288 bled off the top (the yellow people remember) · turquoise 216×224 bleeding off the right (the brand, the card) · imposteur 128×56 pill · mr-white 56×56 disc — ≈38% of 960×288
+  arrangement one tall yellow slab with satellites, bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     discs, from "bien ronds, style sticker": 20 discs (the 20-player maximum) cut into the turquoise card in surface at a space-10 pitch, one lemon-strong (le premier joueur), one imposteur (the odd one out)
+  scales      sides in space-2 multiples; gutters space-4; disc pitch space-10, disc Ø space-6; corners radius-lg, pill and disc rx half the short side
+-->
+<rect class="lemon blk" x="16" y="-24" width="128" height="288" rx="24"/>
+<rect class="imp pill" x="160" y="136" width="128" height="56" rx="28"/>
+<rect class="white pill" x="160" y="208" width="56" height="56" rx="28"/>
+<rect class="turq blk" x="304" y="40" width="216" height="224" rx="24"/>
+<circle class="dot" cx="332" cy="76" r="12"/>
+<circle class="dot" cx="372" cy="76" r="12"/>
+<circle class="dot" cx="412" cy="76" r="12"/>
+<circle class="dot" cx="452" cy="76" r="12"/>
+<circle class="dot" cx="332" cy="116" r="12"/>
+<circle class="dot" cx="372" cy="116" r="12"/>
+<circle class="dot first" cx="412" cy="116" r="12"/>
+<circle class="dot" cx="452" cy="116" r="12"/>
+<circle class="dot" cx="332" cy="156" r="12"/>
+<circle class="dot" cx="372" cy="156" r="12"/>
+<circle class="dot" cx="412" cy="156" r="12"/>
+<circle class="dot" cx="452" cy="156" r="12"/>
+<circle class="dot imp" cx="332" cy="196" r="12"/>
+<circle class="dot" cx="372" cy="196" r="12"/>
+<circle class="dot" cx="412" cy="196" r="12"/>
+<circle class="dot" cx="452" cy="196" r="12"/>
+<circle class="dot" cx="332" cy="236" r="12"/>
+<circle class="dot" cx="372" cy="236" r="12"/>
+<circle class="dot" cx="412" cy="236" r="12"/>
+<circle class="dot" cx="452" cy="236" r="12"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Imposteur</h1>
+<p class="tag">Un téléphone, un mot secret… et quelqu'un qui bluffe.</p>
+</div>
+</div>
+</body>
+</html>

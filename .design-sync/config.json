@@ -1,0 +1,14 @@
+{
+  "projectId": "04674365-4d46-4dd7-ad28-ff607466b766",
+  "shape": "package",
+  "pkg": "imposteur-design-system",
+  "globalName": "Imposteur",
+  "buildCmd": "npm run build",
+  "cssEntry": "dist/styles.css",
+  "docsMap": {
+    "Button": "components/Bouton.md",
+    "SecretCard": "components/CarteSecrete.md",
+    "RoleReveal": "components/RevelationRole.md"
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

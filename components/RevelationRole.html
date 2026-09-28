@@ -1,0 +1,27 @@
+<!-- @dsCard group="Jeu" height=280 -->
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:var(--surface);font-family:var(--font-sans);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:var(--space-4);padding:var(--space-6);justify-content:center}
+.tile{box-sizing:border-box;width:180px;padding:var(--space-6) var(--space-4);border-radius:var(--radius-lg);background:var(--surface-tint);border:2px solid var(--ink);box-shadow:var(--shadow-sticker);display:flex;flex-direction:column;align-items:center;gap:var(--space-2);cursor:pointer}
+.disc{width:88px;height:88px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--ink)}
+.disc img{width:52px;height:52px}
+.civil .disc{background:var(--civil)} .imposteur .disc{background:var(--imposteur)} .mr-white .disc{background:var(--mr-white)}
+.name{font-family:var(--font-display);font-weight:700;font-size:24px;line-height:30px}
+.badge{font-size:14px;line-height:18px;font-weight:800;padding:2px var(--space-2);border-radius:var(--radius-pill);border:2px solid var(--ink)}
+.civil .badge{background:var(--civil)} .imposteur .badge{background:var(--imposteur)} .mr-white .badge{background:var(--mr-white)}
+.go .disc{animation:pop 500ms cubic-bezier(.34,1.56,.64,1) both}
+.go .badge{animation:up 200ms ease-out 500ms both}
+@keyframes pop{0%{transform:scale(.4);opacity:0}70%{transform:scale(1.08);opacity:1}100%{transform:scale(1)}}
+@keyframes up{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion: reduce){.go .disc,.go .badge{animation:fade 150ms both}@keyframes fade{from{opacity:0}to{opacity:1}}}
+</style></head>
+<body><div class="row">
+<div class="tile civil go"><div class="disc"><img src="../assets/roles/civil.svg" alt=""></div><div class="name">Léa</div><span class="badge">Civil</span></div>
+<div class="tile imposteur go"><div class="disc"><img src="../assets/roles/imposteur.svg" alt=""></div><div class="name">Sam</div><span class="badge">Imposteur</span></div>
+<div class="tile mr-white go"><div class="disc"><img src="../assets/roles/mr-white.svg" alt=""></div><div class="name">Hugo</div><span class="badge">Mr. White</span></div>
+</div>
+<script>
+document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('click',function(){t.classList.remove('go');void t.offsetWidth;t.classList.add('go');});});
+</script></body></html>

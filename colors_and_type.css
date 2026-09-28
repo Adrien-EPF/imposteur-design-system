@@ -1,0 +1,35 @@
+/* Imposteur — tokens (thème clair) */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;600;800&display=swap");
+
+:root {
+  --surface: #ffffff; /* Fond général de toutes les pages. */
+  --surface-tint: #e6f8f8; /* Tuiles joueurs, panneaux et lignes de liste posés sur surface. */
+  --ink: #1f2a37; /* Texte principal sur surface, surface-tint, lemon, turquoise et les couleurs de rôle (≥ 4,5:1 partout). */
+  --ink-muted: #5f6b78; /* Texte secondaire, compteurs, aides sur surface (5,4:1). */
+  --turquoise: #2ec4c6; /* Couleur de marque : bouton principal (texte ink, 6,8:1), accents, en-têtes. Jamais pour du texte sur blanc (2,1:1). */
+  --turquoise-deep: #067a82; /* Texte et liens turquoise sur surface (5,1:1), anneau de focus, contour des tuiles sélectionnées. */
+  --lemon: #fff3b0; /* Jaune pâle : la carte secrète (E5) et les fonds de mise en avant. Toujours texte ink (12,9:1). Presque invisible sur blanc : toujours avec shadow-card ou un contour. */
+  --lemon-strong: #ffd84a; /* Pastille « premier joueur » du tour, confettis de victoire. Texte ink (10,5:1). */
+  --civil: var(--turquoise); /* Rôle Civil, seulement après révélation (E7, E8). Toujours avec l'icône et le mot « Civil » ; texte ink dessus. */
+  --imposteur: #ff6b81; /* Rôle Imposteur, seulement après révélation. Toujours avec l'icône et le libellé ; texte ink dessus (5,3:1). */
+  --mr-white: #8f7cff; /* Rôle Mr. White (fantôme). Toujours avec l'icône et le libellé ; texte ink dessus (4,5:1). */
+  --danger: #c9304d; /* Action définitive « Éliminer » ; texte surface dessus (5,2:1). Il n'y a pas d'Annuler. */
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-10: 40px;
+  --radius-sm: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sticker: 0 4px 0 #1f2a37;
+  --shadow-card: 0 12px 32px rgba(31, 42, 55, 0.14);
+  --font-display: "Baloo 2", "Nunito", ui-rounded, system-ui, sans-serif;
+  --font-sans: "Nunito", ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.secret-word { font-family: var(--font-display); font-size: 64px; line-height: 68px; font-weight: 800; letter-spacing: -0.01em; } /* Le mot sur la carte secrète, et « Tu es Mr. White ». */
+.title { font-family: var(--font-display); font-size: 40px; line-height: 44px; font-weight: 800; } /* Titres d'écran ; lisible à 1 m sur E6. */
+.heading { font-family: var(--font-display); font-size: 24px; line-height: 30px; font-weight: 700; } /* Titres de section, prénoms sur les tuiles. */
+.body { font-family: var(--font-sans); font-size: 18px; line-height: 26px; font-weight: 500; } /* Consignes et règles. */
+.label { font-family: var(--font-sans); font-size: 17px; line-height: 20px; font-weight: 800; } /* Boutons et contrôles. */
+.caption { font-family: var(--font-sans); font-size: 14px; line-height: 18px; font-weight: 600; } /* Compteurs, statut de la bibliothèque, métadonnées. */
